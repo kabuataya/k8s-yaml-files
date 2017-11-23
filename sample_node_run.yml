@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name:  hello-pod
+  name:  single_pod
 spec:
   containers:
-    - image: vmwarecna/nginx:latest
-      name:  vmwarecna-nginx
+    - image: harbor.kay.local/library/k8s:latest
+      name:  node_pod
       ports:
-        - containerPort: 80
+        - containerPort: 3000
