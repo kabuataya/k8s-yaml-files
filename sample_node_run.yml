@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name:  single_pod
+  name:  single-pod
 spec:
   containers:
     - image: harbor.kay.local/library/k8s:latest
-      name:  node_pod
+      name:  node-pod
       ports:
         - containerPort: 3000
