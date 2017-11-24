@@ -5,15 +5,14 @@ metadata:
 spec:
   replicas: 5
   selector:
-    app: rc-nodejs-sample
+    app: rc-nodejs
   template: 
     metadata:
     labels:
-      app: rc-nodejs-sample
-      version: 1.0
+      app: rc-nodejs
     spec:
       containers:
-      - name: rc-nodejs-pod
+      - name: nodejs-pod
         image: harbor.kay.local/library/k8s:latest
         ports:
         - containerPort: 3000
