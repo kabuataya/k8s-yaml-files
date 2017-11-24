@@ -10,6 +10,7 @@ spec:
     metadata:
     labels:
       app: rc-nodejs-sample
+      version: 1.0
     spec:
       containers:
       - name: rc-nodejs-pod
