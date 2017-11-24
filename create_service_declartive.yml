@@ -1,5 +1,5 @@
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
   name:  k8s-app-svc
 spec:
@@ -7,6 +7,6 @@ spec:
     app:  rc-nodejs
   type:  NodePort
   ports:
-  - name:  App-Port
+  - name:  app-port
     port:  3000
-    targetPort:  30001
+    nodePort:  30001
