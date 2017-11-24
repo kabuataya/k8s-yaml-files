@@ -8,8 +8,8 @@ spec:
     app: rc-nodejs
   template: 
     metadata:
-    labels:
-      app: rc-nodejs
+      labels:
+        app: rc-nodejs
     spec:
       containers:
       - name: nodejs-pod
