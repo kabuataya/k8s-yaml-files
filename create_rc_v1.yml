@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name:  node-pod-rc-v1
+spec:
+  replicas: 10
+  selector:
+    app: rc-nodejs
+    version: v1
+  template: 
+    metadata:
+      labels:
+        app: rc-nodejs
+        version: v1
+    spec:
+      containers:
+      - name: nodejs-pod
+        image: harbor.kay.local/library/myapp:v1
+        ports:
+        - containerPort: 3000
