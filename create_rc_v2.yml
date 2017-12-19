@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: nodejs-pod
-        image: harbor.kay.local/library/myapp:v2
+        image: harbor.kay.local/library/k8sapp:v2
         ports:
         - containerPort: 3000
