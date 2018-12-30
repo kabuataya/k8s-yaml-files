@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: k8s-app
+spec:
+  rules:
+  - host: k8sapp.kay.local
+    http:
+      paths:
+      - path: /*
+        backend:
+          serviceName: k8s-app-svc
+          servicePort: 80
