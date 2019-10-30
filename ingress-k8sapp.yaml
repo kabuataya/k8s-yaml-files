@@ -10,4 +10,4 @@ spec:
       - path: /*
         backend:
           serviceName: k8s-app-svc
-          servicePort: 80
+          servicePort: 3000
